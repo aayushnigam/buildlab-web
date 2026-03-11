@@ -6,7 +6,7 @@ const instructors = [
         name: "Kartik Raj",
         role: "Mentor",
         bio: "Expert mentor guiding students through the BuildLab curriculum.",
-        img: "/Kartik Raj.png",
+        img: "/Kartik Raj.webp",
         fallback: "https://ui-avatars.com/api/?name=Kartik+Raj&background=0D8BFF&color=fff&size=400",
         tags: ["IIT Kanpur"],
         linkedin: "https://www.linkedin.com/in/kartikr23/"
@@ -15,7 +15,7 @@ const instructors = [
         name: "Aayush Nigam",
         role: "Mentor",
         bio: "Expert mentor guiding students through the BuildLab curriculum.",
-        img: "/Aayush Nigam.png",
+        img: "/Aayush Nigam.webp",
         fallback: "https://ui-avatars.com/api/?name=Aayush+Nigam&background=FF5722&color=fff&size=400",
         tags: ["IIIT Guwahati"],
         linkedin: "https://www.linkedin.com/in/aayushnigam22/"
@@ -24,7 +24,7 @@ const instructors = [
         name: "Pooja Talele",
         role: "Mentor",
         bio: "Expert mentor guiding students through the BuildLab curriculum.",
-        img: "/pooja-talele.jpeg",
+        img: "/pooja-talele.webp",
         fallback: "https://ui-avatars.com/api/?name=Pooja+Talele&background=4CAF50&color=fff&size=400",
         tags: ["BITS PILANI"],
         linkedin: "https://www.linkedin.com/in/poojatalele/"
@@ -33,7 +33,7 @@ const instructors = [
         name: "Akarsh Sharma",
         role: "Mentor",
         bio: "Expert mentor guiding students through the BuildLab curriculum.",
-        img: "/Akarsh Sharma.png",
+        img: "/Akarsh Sharma.webp",
         fallback: "https://ui-avatars.com/api/?name=Akarsh+Sharma&background=9C27B0&color=fff&size=400",
         tags: ["HBTU Kanpur"],
         linkedin: "https://www.linkedin.com/in/akarsh29/"
@@ -42,7 +42,7 @@ const instructors = [
         name: "Sanyam Maheshwari",
         role: "Mentor",
         bio: "Expert mentor guiding students through the BuildLab curriculum.",
-        img: "/Sanyam Maheshwari.png",
+        img: "/Sanyam Maheshwari.webp",
         fallback: "https://ui-avatars.com/api/?name=Sanyam+Maheshwari&background=E91E63&color=fff&size=400",
         tags: ["Deloitte"],
         linkedin: "https://www.linkedin.com/in/sanyam-maheshwari/"
@@ -51,7 +51,7 @@ const instructors = [
         name: "Yash Goyal",
         role: "Mentor",
         bio: "Expert mentor guiding students through the BuildLab curriculum.",
-        img: "/Yash Goyall.png",
+        img: "/Yash Goyall.webp",
         fallback: "https://ui-avatars.com/api/?name=Yash+Goyal&background=FFC107&color=000&size=400",
         tags: ["NMIMS"],
         linkedin: "https://www.linkedin.com/in/yash-goyal-3686311b0/"
@@ -60,7 +60,7 @@ const instructors = [
         name: "Sagnik Banerjee",
         role: "Mentor",
         bio: "Expert mentor guiding students through the BuildLab curriculum.",
-        img: "/Sagnik  Banerjee.png",
+        img: "/Sagnik  Banerjee.webp",
         fallback: "https://ui-avatars.com/api/?name=Sagnik+Banerjee&background=00BCD4&color=fff&size=400",
         tags: ["Urban Company"],
         linkedin: "https://www.linkedin.com/in/sagnik--banerjee/"
@@ -69,7 +69,7 @@ const instructors = [
         name: "Pranav Bagla",
         role: "Mentor",
         bio: "Expert mentor guiding students through the BuildLab curriculum.",
-        img: "/Pranav Bagla.png",
+        img: "/Pranav Bagla.webp",
         fallback: "https://ui-avatars.com/api/?name=Pranav+Bagla&background=795548&color=fff&size=400",
         tags: ["DTU"],
         linkedin: "https://www.linkedin.com/in/baglapranav07/"
@@ -115,6 +115,7 @@ const Mentors: React.FC = () => {
                       e.currentTarget.src = instructor.fallback;
                     }}
                     referrerPolicy="no-referrer"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 rounded-t-lg bg-gradient-to-t from-white/10 to-transparent pointer-events-none"></div>
                 </div>
