@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
               BuildLab provides all instructors, materials, and curriculum; schools provide only one classroom for 3 hours on Saturdays.
             </p>
             <p className="text-sm text-gray-400 mt-4">
-              Contact buildlab.live or call [our contact line] to join the exclusive shortlist of schools for the next cohort.
+              Contact buildlab.co.in or call +91-8955422723 to join the exclusive shortlist of schools for the next cohort.
             </p>
           </div>
           <div className="flex justify-center">
