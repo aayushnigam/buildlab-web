@@ -422,19 +422,19 @@ const Curriculum: React.FC = () => {
                     initial={{ opacity: 0, scale: 0.9, y: 20 }}
                     animate={{ opacity: 1, scale: 1, y: 0 }}
                     exit={{ opacity: 0, scale: 0.9, y: 20 }}
-                    className="relative w-full max-w-2xl bg-surface-dark border border-slate-800 rounded-3xl overflow-hidden shadow-2xl"
+                    className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-surface-dark border border-slate-800 rounded-3xl shadow-2xl"
                 >
-                    <div className="absolute top-0 left-0 w-full h-1.5 bg-primary"></div>
+                    <div className="absolute top-0 left-0 w-full h-1.5 bg-primary z-20"></div>
                     <button 
                         onClick={() => setSelectedModule(null)}
-                        className="absolute top-6 right-6 text-slate-500 hover:text-white transition-colors"
+                        className="fixed top-6 right-6 sm:absolute sm:top-6 sm:right-6 bg-slate-900/80 backdrop-blur-sm sm:bg-transparent p-2 sm:p-0 rounded-full sm:rounded-none z-50 text-slate-300 hover:text-white transition-colors border border-white/10 sm:border-transparent"
                     >
                         <span className="material-icons-round">close</span>
                     </button>
 
-                    <div className="p-8 sm:p-12">
-                        <div className="flex items-center gap-4 mb-8">
-                            <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center">
+                    <div className="p-6 sm:p-12 pt-16 sm:pt-12">
+                        <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-8">
+                            <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center shrink-0">
                                 <span className="material-icons-round text-primary text-4xl">{selectedModule.icon}</span>
                             </div>
                             <div>
